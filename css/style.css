@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+.container{
+
+    background-color: #ccc;
+    height: 200px;
+    display: flex;
+    flex-direction: row-reverse;
+
+    /*column | row-reverse| column-reverse itens sejão renderizado
+    em coluna*/
+
+    flex-wrap: nowrap;
+    /*flex-wrap define se os itens vão ou não ter quebras 
+    de linha*/
+    /*flex-wrap: wrap| wrap-reverse*/
+    /*flex-wrap: wrap, no-wrap, wrap-reverse*/
+
+    /*flex-flow: row nowrap;*/
+    /*flex-flow: é uma forma de usar os valores do
+    flex-direction e do flex-wrap*/
+
+    /*justify-contente: faz o alinhamento dos itens*/
+    /*justify-contente: space-between faz o espaçamento 
+    entre os itens*/
+    /*justify-contente:flex-end| center| space-between| space-around
+    */
+    /*justify-contente: space-around faz o espaçamento 
+    entre os itens e também da espaça nos itens que
+    estão nas extremidades*/
+    justify-content: start;
+
+    /*align-itens: faz o alinhamento vertical 
+    */
+    align-items: baseline;
+    /*align-items: flex-start| flex-end| center|baseline*/
+
+    align-content: flex-start;
+}
+.item{
+
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    /* flex-grow -> tem haver com as larguras dos items*/
+    flex-grow: 1;
+    flex-basis: 20px; /* da a largura inicial do item*/
+    flex-shrink: 1; /* diminui os items*/
+
+}
+.article-01{flex-shrink: 3;}
+.article-02{}
+.article-03{}
+.article-04{}
